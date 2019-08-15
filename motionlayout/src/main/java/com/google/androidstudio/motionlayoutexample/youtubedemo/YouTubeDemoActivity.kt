@@ -36,7 +36,7 @@ class YouTubeDemoActivity : AppCompatActivity() {
             isNestedScrollingEnabled = false
             layoutManager = LinearLayoutManager(this@YouTubeDemoActivity)
         }
-        val debugMode = if (intent.getBooleanExtra("showPaths", false)) {
+        val debugMode = if (intent.getBooleanExtra("showPaths", true)) {
             MotionLayout.DEBUG_SHOW_PATH
         } else {
             MotionLayout.DEBUG_SHOW_NONE

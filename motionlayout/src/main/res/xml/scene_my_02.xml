@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/tans02"
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500"
+        motion:motionInterpolator="easeOut">
+
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/connerBtn" />
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/card"
+            motion:touchAnchorSide="bottom" />
+        <KeyFrameSet>
+            <KeyAttribute
+                android:rotation="0"
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50"
+                motion:motionTarget="@id/connerBtn2" />
+            <KeyAttribute
+                android:rotation="0"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                motion:framePosition="50"
+                motion:motionTarget="@id/connerBtn1" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+
+            motion:transitionEasing="accelerate" />
+
+        <Constraint
+            android:id="@+id/connerBtn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子1"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent" />
+
+        <Constraint
+            android:id="@+id/connerBtn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子2"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent" />
+
+        <Constraint
+            android:id="@+id/connerBtn3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子3"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+
+
+        <Constraint
+            android:id="@+id/connerBtn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子1"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toLeftOf="@id/connerBtn" />
+
+        <Constraint
+            android:id="@+id/connerBtn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子2"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toTopOf="@id/connerBtn"
+            motion:layout_constraintRight_toLeftOf="@id/connerBtn" />
+
+        <Constraint
+            android:id="@+id/connerBtn3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/small_round_bg"
+            android:text="子3"
+            android:textColor="@color/colorAccent"
+            motion:layout_constraintBottom_toTopOf="@id/connerBtn"
+            motion:layout_constraintRight_toRightOf="parent" />
+    </ConstraintSet>
+
+    <!--<KeyFrameSet>-->
+    <!--<KeyAttribute-->
+    <!--android:rotation="0"-->
+    <!--android:scaleX="2"-->
+    <!--android:scaleY="2"-->
+    <!--motion:framePosition="50"-->
+    <!--motion:motionTarget="@id/connerBtn2" />-->
+    <!--<KeyAttribute-->
+    <!--android:rotation="0"-->
+    <!--android:scaleX="0.7"-->
+    <!--android:scaleY="0.7"-->
+    <!--motion:framePosition="50"-->
+    <!--motion:motionTarget="@id/connerBtn1" />-->
+    <!--</KeyFrameSet>-->
+</MotionScene>

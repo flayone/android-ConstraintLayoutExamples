@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.androidstudio.motionlayoutexample.fragmentsdemo.FragmentExample2Activity
 import com.google.androidstudio.motionlayoutexample.fragmentsdemo.FragmentExampleActivity
+import com.google.androidstudio.motionlayoutexample.mydemo.MyFirstMotionActivity
 import com.google.androidstudio.motionlayoutexample.viewpagerdemo.ViewPagerActivity
 import com.google.androidstudio.motionlayoutexample.viewpagerdemo.ViewPagerActivity2
 import com.google.androidstudio.motionlayoutexample.youtubedemo.YouTubeDemoActivity
@@ -17,9 +18,12 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private var doShowPaths = false
+    private var doShowPaths = true
 
     private val dataset: Array<DemosAdapter.Demo> = arrayOf(
+            DemosAdapter.Demo("My Example (00)", "MotionLayout实现折叠工具栏", MyFirstMotionActivity::class.java),
+            DemosAdapter.Demo("My Example (01)", "画一个五角星", R.layout.motion_my_01),
+            DemosAdapter.Demo("My Example (02)", "沉浸式操作", R.layout.motion_my_02),
             DemosAdapter.Demo("Basic Example (1/3)", "Basic motion example using referenced ConstraintLayout files", R.layout.motion_01_basic),
             DemosAdapter.Demo("Basic Example (2/3)", "Basic motion example using ConstraintSets defined in the MotionScene file", R.layout.motion_02_basic),
             DemosAdapter.Demo("Basic Example (3/3)", "Basic motion example same as 2, but autoComplete is set to false in onSwipe", R.layout.motion_02_basic_autocomplete_false),
