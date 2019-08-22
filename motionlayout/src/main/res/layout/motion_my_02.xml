@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_bg"
-    android:padding="5dp"
+    android:padding="12dp"
     app:layoutDescription="@xml/scene_my_02">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp" />
 
     <Button

@@ -72,7 +72,7 @@ class FragmentExampleActivity : AppCompatActivity(), View.OnClickListener, Motio
     override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
     }
 
-    override fun allowsTransition(p0: MotionScene.Transition?): Boolean {
+      fun allowsTransition(p0: MotionScene.Transition?): Boolean {
         return true
     }
 

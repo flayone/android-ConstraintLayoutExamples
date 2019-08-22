@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
             DemosAdapter.Demo("My Example (00)", "MotionLayout实现折叠工具栏", MyFirstMotionActivity::class.java),
             DemosAdapter.Demo("My Example (01)", "画一个五角星", R.layout.motion_my_01),
             DemosAdapter.Demo("My Example (02)", "沉浸式操作", R.layout.motion_my_02),
+            DemosAdapter.Demo("My Example (03)", "三个控件3D切换（一）", R.layout.motion_my_03),
+            DemosAdapter.Demo("My Example (04)", "三个控件3D切换（二）", R.layout.motion_my_04),
             DemosAdapter.Demo("Basic Example (1/3)", "Basic motion example using referenced ConstraintLayout files", R.layout.motion_01_basic),
             DemosAdapter.Demo("Basic Example (2/3)", "Basic motion example using ConstraintSets defined in the MotionScene file", R.layout.motion_02_basic),
             DemosAdapter.Demo("Basic Example (3/3)", "Basic motion example same as 2, but autoComplete is set to false in onSwipe", R.layout.motion_02_basic_autocomplete_false),
