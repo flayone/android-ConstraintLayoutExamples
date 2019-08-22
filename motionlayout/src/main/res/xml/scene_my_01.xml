@@ -97,10 +97,18 @@
                 motion:percentY="0" />
 
             <KeyAttribute
+                android:alpha="1"
                 android:rotation="-45"
                 android:scaleX="2"
                 android:scaleY="2"
                 motion:framePosition="50"
+                motion:motionTarget="@id/button" />
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="0"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="88"
                 motion:motionTarget="@id/button" />
         </KeyFrameSet>
     </Transition>

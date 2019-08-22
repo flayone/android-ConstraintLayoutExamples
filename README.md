@@ -20,6 +20,11 @@ MotionLayout samples overview
 
 |  Title  |  GIF  | Layout | MotionScene | 
 | :----: | :----: | :----: | :----: |
+|  My Example (00) | <img src="screenshots/motion_layout.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_my_00.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_my_00.xml) | 
+|  My Example (01) | <img src="screenshots/motion_layout.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_my_01.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_my_01.xml) | 
+|  My Example (02) | <img src="screenshots/motion_layout.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_my_02.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_my_02.xml) | 
+|  My Example (03) | <img src="screenshots/motion_layout.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_my_03.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_my_03.xml) | 
+|  My Example (04) | <img src="screenshots/motion_layout2.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_my_04.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_my_04.xml) | 
 |  Basic Example (1/3) | <img src="https://user-images.githubusercontent.com/796361/53616329-6ce64e80-3c25-11e9-8fe1-a4d60bf25584.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_01_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_01.xml) | 
 |  Basic Example (2/3) | <img src="https://user-images.githubusercontent.com/796361/53616351-84bdd280-3c25-11e9-83ce-b933e276d08e.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_02_basic.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_02.xml) | 
 |  Basic Example (3/3) | <img src="https://user-images.githubusercontent.com/796361/57440055-4296ba00-7282-11e9-8209-981ba020cda1.gif" height="360" width="180" > | [Layout](motionlayout/src/main/res/layout/motion_02_basic_autocomplete_false.xml) | [MotionScene](motionlayout/src/main/res/xml/scene_02_autocomplete_false.xml) | 
